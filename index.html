@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LuLucat Bombing v5.1</title>
+    <title>LuLucat Bombing v6.0</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body oncontextmenu="return false" onkeydown="if(event.keyCode==123) return false;">
 
     <div class="box" id="loginBox">
         <h2 class="brand">🐱 LuLucat SECURITY</h2>
-        <p id="mathQuestion" style="font-weight: bold; font-size: 22px; color: #fff;">0 + 1 = ?</p>
-        <input type="number" id="answerInput" placeholder="အဖြေရိုက်ထည့်ပါ">
+        <p>0 + 1 = ?</p>
+        <input type="number" id="answerInput" placeholder="Answer the question ">
         <button onclick="checkMath()">UNLOCK</button>
     </div>
 
     <div class="box" id="controlPanel" style="display:none;">
         <h2 class="brand">🚀 LuLucat Bombing</h2>
-        
-        <input type="text" id="phone" placeholder="959xxxxxxx">
-        <input type="number" id="smsCount" placeholder="SMS Quantity">
+        <input type="text" id="phone" placeholder="09xxxxxxx">
+        <input type="number" id="smsCount" placeholder="Quantity">
         
         <select id="serverSelect" onchange="handleServerChange()">
             <option value="1">Server 1</option>
@@ -30,18 +29,7 @@
             <div class="progress-bar" id="pBar"></div>
         </div>
 
-        <div id="counterArea" class="counter-text" style="display:none;">
-            Sent: <span id="sentVal">0</span> / Left: <span id="leftVal">0</span>
-        </div>
-
-        <button id="startBtn" onclick="startBomb()">VERIFY & LAUNCH ATTACK</button>
-        
-        <button onclick="window.open('https://t.me/Rowan_Elliss', '_blank')" class="contact-btn">CONTACT INFO</button>
-
-        <div id="adminCounter">
-            <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Flulucat-bombing.netlify.app&count_bg=%2300FFCC&title_bg=%231A1F29&title=Users&edge_flat=false">
-        </div>
-        
+        <button id="startBtn" onclick="startBomb()">LAUNCH ATTACK</button>
         <button onclick="location.reload()" class="logout-btn">LOGOUT</button>
     </div>
 
